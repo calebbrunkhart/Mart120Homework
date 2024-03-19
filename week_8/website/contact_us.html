@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            text-align: center;
+            font-family: cursive;
+        }
+        a {
+            color: green;
+            font-size: 16px;
+        }
+    </style>
+    <title>Contact Us</title>
+    <script>
+        function getData() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            if (name === "") {
+                document.getElementById("name").focus();
+                document.getElementById("name").style.borderColor = "red";
+            }
+            if (email === "") {
+                document.getElementById("email").focus();
+                document.getElementById("email").style.borderColor = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form>
+        <label>Enter your first and last name:<br><input type="text" id="name" required></label><br>
+        <br><label>Enter your email:<br><input type="email" id="email" required></label><br>
+        <br><label>Enter your comment or concern:<br><textarea id="comment" placeholder="comment or concern" rows="5" cols="20"></textarea></label><br>
+        <br><label>Check the box if you agree to the terms of service<input type="checkbox" id="terms" required></label><br>
+        <br><button id="submit" class="btn btn-primary" onclick="getData();">Submit</button>
+    </form>
+    <p><a href="index.html" id="link">Home</a> | <a href="form.html" id="link">Your favorite?</a> | <a href="game_images.html" id="link">Game images</a></p>
+</body>
+</html>
