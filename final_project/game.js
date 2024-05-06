@@ -109,6 +109,12 @@ class Enemy {
     changey(v) {
         this.y += v;
     }
+    resetx(v) {
+        this.x = v;
+    }
+    resety(v){
+        this.y = v;
+    }
 } 
 
 /********************************************************************************
@@ -676,5 +682,9 @@ Game Over
 function gameOver() {
     if (deathCount == 3) {
         room = 4;
+        chaser.resetx(width - 50);
+        chaser.resety(height - 75);
+        chaser2.resetx(width - 50);
+        chaser2.resety(75);
     }
 }
