@@ -205,7 +205,7 @@ KEY PRESSES W AND R
 *****************************************************************************/ 
 function keyPressed(){
     if(jumpCount == 0){
-        if(key == 'w') 
+        if(key == ' ') 
             yVel = -40
             jumpCount = 1;
     }
@@ -215,7 +215,7 @@ function keyPressed(){
         player.y = groundY - 50;
         deathCount = 0;
     }
-    if (key == ' ' && room == 0) {
+    if (key == 's' && room == 0) {
         room = 1;
         player.x = 50;
         player.y = 525;
@@ -269,7 +269,7 @@ function room_0() {
     textFont('Impact');
     textAlign(CENTER, CENTER)
     text('The Grand Adventure of Square Man \n \nA game of hard jumps', width / 2, height / 4);
-    text('Press Space to begin', width / 2, height / 2);
+    text('Press S to begin', width / 2, height / 2);
     if (xc - 12.5 <= 0 || xc + 12.5 >= width) {
         xmove *= -1;
     }
