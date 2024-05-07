@@ -334,7 +334,7 @@ function room_1() {
     e3.drawE();
     e4.drawE();
     drawLife();
-    gameOver();
+    //gameOver();
 }
 /******************************************************************************************
 ROOM 2
@@ -422,7 +422,7 @@ function room_2() {
     e9.drawE();             
     
     drawLife();
-    gameOver();
+    //gameOver();
 }
 /********************************************************************************************
 ROOM 3
@@ -526,7 +526,7 @@ function room_3() {
     chaser2.drawE();
 
     drawLife();
-    gameOver();
+    //gameOver();
 
 }
 
